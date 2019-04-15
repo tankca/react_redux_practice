@@ -10,12 +10,12 @@ class HomePage extends Component {
   render() {
     return (
       <div>
-        <h1>Welcome!</h1>
+        <h1>Success!</h1>
         <TextButton
           primary={true}
-          to="./personal-details"
+          to="./"
         >
-          Next
+          Restart
         </TextButton>
       </div>
     )

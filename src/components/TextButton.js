@@ -9,17 +9,17 @@ class TextButton extends Component {
     onClick: PropTypes.func,
     to: PropTypes.string,
     children: PropTypes.node
-  } 
+  }
 
   static defaultProps = {
     type: 'button',
-    onClick: (event) => { console.log('Button Pressed!');
+    onClick: () => {
+      console.log('Button Pressed!');
     },
   }
-  
-  
-  render_button = () => {
-    return(
+
+  render() {
+    return (
       <button
         type={this.props.type}
         disabled={this.props.disabled}
@@ -30,12 +30,6 @@ class TextButton extends Component {
       >
         {this.props.children}
       </button>
-    )
-  }
-
-  render() {
-    return (
-      this.render_button()
     )
   }
 }

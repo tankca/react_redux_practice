@@ -15,6 +15,7 @@ import rootReducer from './reducers'
 import HomePage from './pages/HomePage'
 import PersonalDetailsPage from './pages/PersonalDetailsPage'
 import ConfirmationPage from './pages/ConfirmationPage'
+import SuccessPage from './pages/SuccessPage'
 
 
 const store = createStore(rootReducer)
@@ -28,6 +29,7 @@ class App extends Component {
               <Route exact path='/' component={HomePage}></Route>
               <Route exact path='/personal-details' component={PersonalDetailsPage}></Route>
               <Route exact path='/confirmation' component={ConfirmationPage}></Route>
+              <Route exact path='/success' component={SuccessPage}></Route>
             </div>
           </Router>
         </Provider>
