@@ -11,7 +11,7 @@ import TextButton from '../../components/TextButton'
 
 class ConfirmationPage extends Component {
 
-  render() {
+  renderForm = () => {
     return (
       <form>
         <h3>Please confirm your application details</h3>
@@ -44,6 +44,17 @@ class ConfirmationPage extends Component {
           Confirm
         </TextButton>
       </form>
+    )
+  }
+
+  render() {
+    return (
+      <div>
+        {this.renderForm()}
+        {this.renderForm()}
+        {this.renderForm()}
+        {this.renderForm()}
+      </div>
     )
   }
 }

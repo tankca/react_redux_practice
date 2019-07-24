@@ -36,7 +36,7 @@ class PersonalDetailsPage extends Component {
     this.props.history.push('./confirmation')
   }
 
-  render() {
+  renderWizardForm = () => {
     return (
       <div>
         <WizardForm
@@ -116,6 +116,18 @@ class PersonalDetailsPage extends Component {
             </div>
           </WizardForm.Page>
         </WizardForm>
+      </div>
+    )
+  }
+
+  render() {
+    return (
+      <div>
+        {this.renderWizardForm()}
+        {this.renderWizardForm()}
+        {this.renderWizardForm()}
+        {this.renderWizardForm()}
+        {this.renderWizardForm()}
       </div>
     )
   }
